@@ -8,8 +8,8 @@ function Navlinks(props) {
     }
     return (
         <>
-            <div className = {"flex px-6 py-3 cursor-pointer border-b-4 border-white hover:border-black"+h}>
-                <h2>{props.children}</h2>
+            <div className = {"flex px-4 min-[900px]:px-6 py-1 min-[900px]:px-3 cursor-pointer border-b-4 border-white hover:border-black"+h}>
+                <h2 className = "flex flex-col items-center justify-center">{props.children}</h2>
             </div>
         </>
     )
