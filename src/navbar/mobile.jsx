@@ -25,7 +25,7 @@ function Mobilenav() {
                     </Link>
                 </div>
                 <Link to = "/">
-                    <img className = "h-14 px-5 py-2 box-content hover:brightness-110" src = "src/assets/logo.png"></img>
+                    <img className = "h-14 px-5 py-2 box-content hover:brightness-110" src = "public/logo.png"></img>
                 </Link>
                 <div className = "flex grow shrink basis-0 items-end">
                     <Link to = "/donate" className = "w-full flex grow shrink basis-0 h-full items-center justify-center">
