@@ -1,5 +1,3 @@
-import Navbar from "./navbar/navbar.jsx"
-import Mobilenav from "./navbar/mobile.jsx";
 import React from "react";
 import {
     BrowserRouter as Router,
@@ -14,13 +12,10 @@ import Blogs from "./pages/blogs.jsx"
 import Joinus from "./pages/joinus.jsx"
 import Programmes from "./pages/programmes.jsx"
 import More from "./pages/more.jsx"
-
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
-        <Mobilenav/>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -5,9 +5,9 @@ import { Outlet, Link } from "react-router-dom";
 function Navbar() {
     return (
         <>
-            <div className = "hidden flex-row bg-white w-screen px-12 fixed top-0 left-0 box-border shadow-[0_10px_10px_0_rgba(0,0,0,0.2)] items-stretch min-[900px]:flex">
-                <Link to = "/">
-                    <div className = "flex flex-row cursor-pointer items-center my-8">
+            <div className = "h-36 z-50 hidden flex-row bg-white w-screen px-12 fixed top-0 left-0 box-border shadow-[0_10px_10px_0_rgba(0,0,0,0.2)] items-stretch min-[900px]:flex">
+                <Link className = "flex items-center justify-center" to = "/">
+                    <div className = "flex flex-row cursor-pointer items-center justify-center">
                         <img className = "h-24" src = "/images/logo.png"></img>
                         <div className = "flex flex-col pl-6">
                             <h1 className = "font-light -mb-0.5 text-2xl">Children's</h1>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         "cilcblue": "#57ABC4",
+        "cilcdarkblue": "#358097",
         "cilcgreen": "#BDD84F",
         "cilcpurple": "#493C97",
         "cilcred": "#DB1928",
