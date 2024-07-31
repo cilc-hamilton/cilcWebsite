@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
  
-const Programmes = () => {
+const Celebrations=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
@@ -15,4 +15,4 @@ const Programmes = () => {
     );
 };
  
-export default Programmes;
+export default Celebrations;

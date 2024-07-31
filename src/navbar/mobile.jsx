@@ -9,34 +9,34 @@ import { FaBars } from "react-icons/fa";
 function Mobilenav() {
     return (
         <>
-            <div className = "z-50 flex flex-row bg-white w-screen px-5 fixed bottom-0 left-0 box-border justify-center items-stretch shadow-[0_-10px_10px_0_rgba(0,0,0,0.2)] min-[900px]:hidden">
-                <div className = "flex grow shrink basis-0 items-end">
-                    <Link to = "/about" className = "w-full flex grow shrink basis-0 h-full items-center justify-center">
-                        <Navlinks pos = "mobile">
+            <div className="h-16 z-50 flex flex-row bg-white w-screen px-5 fixed bottom-0 left-0 box-border justify-center items-stretch shadow-[0_-10px_10px_0_rgba(0,0,0,0.2)] min-[900px]:hidden">
+                <div className="flex grow shrink basis-0 items-end">
+                    <Link to="/about" className="w-full flex grow shrink basis-0 h-full items-center justify-center">
+                        <Navlinks pos="mobile">
                             <FaHandsHoldingChild/>
                             About
                         </Navlinks>
                     </Link>
-                    <Link to = "/contact" className = "w-full flex grow shrink basis-0 h-full items-center justify-center">
-                        <Navlinks pos = "mobile">
+                    <Link to="/contact" className="w-full flex grow shrink basis-0 h-full items-center justify-center">
+                        <Navlinks pos="mobile">
                             <GrContact/>
                             Contact
                         </Navlinks>
                     </Link>
                 </div>
-                <div className = "z-1 absolute bg-white rounded-full aspect-square h-full p-1 box-content bottom-0"></div>
-                <Link className = "z-2" to = "/">
-                    <img className = "h-14 px-5 pb-2 box-content brightness-100 hover:brightness-110" src = "/images/logo.png"></img>
+                <div className="z-1 absolute bg-white rounded-full aspect-square h-full p-1 box-content bottom-0"></div>
+                <Link className="z-2" to="/">
+                    <img className="h-14 px-5 pb-2 box-content brightness-100 hover:brightness-110" src="/images/logo.png"></img>
                 </Link>
-                <div className = "flex grow shrink basis-0 items-end">
-                    <Link to = "/donate" className = "w-full flex grow shrink basis-0 h-full items-center justify-center">
-                        <Navlinks pos = "mobile">
+                <div className="flex grow shrink basis-0 items-end">
+                    <Link to="/donate" className="w-full flex grow shrink basis-0 h-full items-center justify-center">
+                        <Navlinks pos="mobile">
                             <BiSolidDonateHeart/>
                             Donate
                         </Navlinks>
                     </Link>
-                    <Link to = "/more" className = "w-full flex grow shrink basis-0 h-full items-center justify-center">
-                        <Navlinks pos = "mobile">
+                    <Link to="/more" className="w-full flex grow shrink basis-0 h-full items-center justify-center">
+                        <Navlinks pos="mobile">
                             <FaBars/>
                             More
                         </Navlinks>
