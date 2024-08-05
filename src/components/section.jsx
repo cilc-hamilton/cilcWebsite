@@ -9,6 +9,7 @@ function Section(props){
         "cilcred": "#DB1928",
         "cilcmedblue": "#0066CC",
         "cilcgrey": "#F0F0F0",
+        "cilcgray": "#E0E0E0",
         "deepblue": "#213547",
         "gold": '#F7D000',
     }
@@ -21,7 +22,7 @@ function Section(props){
     }
     return (
         <>
-            <div style={{backgroundColor: colour}} className="flex flex-col py-12 px-48 box-border items-start justify-center w-screen overflow-hidden">
+            <div style={{backgroundColor: colour}} className="flex flex-col py-12 min-[900px]:px-48 px-12 box-border items-start justify-center w-screen overflow-hidden">
                 {props.children}
             </div>
         </>

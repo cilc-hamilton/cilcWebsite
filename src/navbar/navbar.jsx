@@ -1,5 +1,5 @@
 import React from "react";
-import { Navlinks, Navbuttons } from "./navcomponents"
+import { Navlinks, Navbuttons, Donatebutton } from "./navcomponents"
 import { Outlet, Link } from "react-router-dom";
 import { GoChevronDown } from "react-icons/go";
 
@@ -24,7 +24,7 @@ function Navbar() {
                             <Navbuttons>Contact Us</Navbuttons>
                         </Link>
                         <Link to="/donate">
-                            <Navbuttons>Donate!</Navbuttons>
+                            <Donatebutton/>
                         </Link>
                     </div>
                     <div className="flex flex-row">

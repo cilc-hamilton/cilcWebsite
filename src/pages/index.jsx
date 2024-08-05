@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import Faq from "../components/faq";
  
 const Home = () => {
     return (
@@ -22,6 +23,9 @@ const Home = () => {
                     <h1 className="font-bold">Welcome to the Childen's International Learning Center</h1>
                     <hr className="bg-deepblue"/>
                     <p>The Children's International Learning Centre (CILC) was established with the vision of contributing to a world of care and respect for all people and our environment.  We endeavour to do this by promoting respect for diversity and awareness of our world community through guided discovery and interactive artistic travelling programmes. Our website is always open with activities and resources.</p>
+                </Section>
+                <Section color="white">
+                    <Faq/>
                 </Section>
                 <Footer/>
             </div>

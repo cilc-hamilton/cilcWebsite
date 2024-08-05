@@ -27,19 +27,22 @@ body {
 
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: center;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
 }
+h4 {
+  font-size: 1.4rem;
+}
 p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   width: 100%;
 }
 
@@ -48,8 +51,8 @@ hr {
   border: 0;
   width: 100%;
   color: inherit;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -59,8 +62,8 @@ img {
 button, input[type=submit] {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
@@ -68,7 +71,8 @@ button, input[type=submit] {
 
 ul {
   list-style-type: disc;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {

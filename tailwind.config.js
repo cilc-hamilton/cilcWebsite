@@ -14,6 +14,7 @@ module.exports = {
         "cilcred": "#DB1928",
         "cilcmedblue": "#0066CC",
         "cilcgrey": "#F0F0F0",
+        "cilcgray": "#E0E0E0",
         "deepblue": "#213547",
         "gold": '#F7D000',
       }

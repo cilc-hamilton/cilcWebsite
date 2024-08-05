@@ -27,7 +27,7 @@ function Header(props){
             <Mobilenav/>
             <div className="w-screen overflow-hidden flex flex-col min-[900px]:flex-row items-center justify-center h-fit min-[900px]:h-[600px] min-[900px]:w-screen">
                 <div className="w-screen min-[900px]:w-[30vw] flex flex-col items-center justify-center h-full grow-0 box-border p-8 bg-cilcmedblue">
-                    <h1 className="text-[2em] font-semibold text-white text-5xl pb-2 ">{location.join(" ")}</h1>
+                    <h1 className="text-[2em] font-semibold text-white text-5xl pb-2 text-center">{location.join(" ")}</h1>
                     <h2 className="text-white text-2xl pb-4">{props.desc}</h2>
                     <div className="rounded bg-[#ffffff44] group w-10 h-10 overflow-hidden mt-4 cursor-pointer">
                         <IconContext.Provider value={{ color: "white", size: "1.5rem" }}>

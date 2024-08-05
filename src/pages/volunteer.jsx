@@ -14,7 +14,7 @@ const Volunteer = () => {
                     <Card color="cilcgreen">
                         <h3>As a CILC volunteer, you will have a phenomenal opportunity to:</h3>
                         <hr className="bg-deepblue"/>
-                        <ul className="list-inside">
+                        <ul className="list-inside w-full">
                             <li>Enhance your skill set</li>
                             <li>Gain volunteer hours</li>
                             <li>Receive a reference letter (on completing 50 hours of volunteer time)</li>
