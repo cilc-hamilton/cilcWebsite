@@ -24,7 +24,7 @@ const Resources = () => {
                                 <p className="text-[1em]">A sneak peak at previous newsletters</p>
                             </div>
                         </Link>
-                        <Link className="w-1/3" to="/resourh-full h-full h-full ces/videos">
+                        <Link className="w-1/3" to="/resources/videos">
                             <div className="h-full bg-gold p-4 w-full text-center flex items-center hover:brightness-110">
                                 <p className="text-[1em]">Learn more about the CILC with some cool videos</p>
                             </div>
