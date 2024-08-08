@@ -21,7 +21,7 @@ function Footer(props){
                     </div>
                     <hr className="bg-white"/>
                 </div>
-                <div className="flex flex-row gap-x-12 no-wrap w-full">
+                <div className="flex flex-row gap-x-4 no-wrap w-full px-4">
                     <Link className="w-1/5" to="/about">
                         <p className="text-white w-full text-center hover:underline">About</p>
                     </Link>
