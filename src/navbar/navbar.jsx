@@ -32,13 +32,13 @@ function Navbar() {
                             About
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks dropdown = "Book Nook,Cultural Celebrations,Past Newsletters,Videos" toward="/resources">
+                        <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/resources">
                             Resources
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
                         <Navlinks toward="/programmes">Programmes</Navlinks>
                         <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/join-us">
-                            Join us
+                            Join Us
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
                     </div>

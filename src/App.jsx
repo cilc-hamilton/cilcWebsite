@@ -17,7 +17,7 @@ import Support from "./pages/supporters.jsx";
 import Volunteer from "./pages/volunteer.jsx";
 import Team from "./pages/team.jsx";
 import Org from "./pages/org.jsx";
-import Book from "./pages/book.jsx";
+import Books from "./pages/book.jsx";
 import Celebrations from "./pages/celebrations.jsx";
 import Newsletters from "./pages/newsletters.jsx";
 import Videos from "./pages/videos.jsx";
@@ -33,7 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/donate" element={<Donate/>}/>
           <Route path="/resources" element={<Resources/>}/>
-          <Route path="/resources/book-nook" element={<Book/>}/>
+          <Route path="/resources/book-nook" element={<Books/>}/>
           <Route path="/resources/cultural-celebrations" element={<Celebrations/>}/>
           <Route path="/resources/past-newsletters" element={<Newsletters/>}/>
           <Route path="/resources/videos" element={<Videos/>}/>

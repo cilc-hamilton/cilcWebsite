@@ -84,8 +84,8 @@ function Donatebutton() {
                     </Link>
                     <Outlet/>
                 </div>
-                <div className="filter flex flex-row px-6 py-3 bg-cilcblue cursor-pointerhover:brightness-110">
-                    <h2 className="text-white flex flex-row items-center justify-center">Donate now!</h2>
+                <div className="filter flex flex-row px-6 py-3 bg-cilcred cursor-pointer hover:brightness-110">
+                    <h2 className="text-white flex flex-row items-center justify-center">Donate Now!</h2>
                 </div>
             </div>
         </>
