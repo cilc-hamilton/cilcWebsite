@@ -3,6 +3,25 @@ import { useState } from 'react'
 import { Outlet, Link } from "react-router-dom";
 
 function Navlinks(props) {
+    const colours = {
+        "cilcblue": "#57ABC4",
+        "cilcdarkblue": "#358097",
+        "cilcgreen": "#BDD84F",
+        "cilcpurple": "#493C97",
+        "cilcred": "#DB1928",
+        "cilcmedblue": "#0066CC",
+        "cilcgrey": "#F0F0F0",
+        "cilcgray": "#E0E0E0",
+        "deepblue": "#213547",
+        "gold": '#F7D000',
+    }
+    let colour = props.color
+    if (colour == ""){
+        colour = "white"
+    }
+    if (colours.hasOwnProperty(colour)){
+        colour = colours[colour]
+    }
     let h=""
     let flexD="row"
     if (props.pos=="mobile"){
@@ -40,7 +59,7 @@ function Navlinks(props) {
         <>
             <div className = "inline-flex flex-col relative" onMouseEnter={handleHover} onMouseLeave={handleOff}>
                 <Link to={props.toward}>
-                    <div className={"flex flex-row px-4 min-[900px]:px-6 py-1 px-3 cursor-pointer border-b-4 border-white hover:border-black hover:brightness-90"+h}>
+                    <div style={{borderColor:colour}} className={"flex flex-row px-4 min-[900px]:px-6 py-1 px-3 cursor-pointer border-b-4 border-solid hover:brightness-0"+h}>
                         <h2 className="flex flex-row items-center justify-center">{props.children}</h2>
                     </div>
                 </Link>
@@ -82,7 +101,6 @@ function Donatebutton() {
                             <h2>Paypal</h2>
                         </div>
                     </Link>
-                    <Outlet/>
                 </div>
                 <Link to="/donate">
                     <div className="filter flex flex-row px-6 py-3 bg-cilcred cursor-pointer hover:brightness-110">

@@ -11,9 +11,9 @@ function Navbar() {
                     <div className="flex flex-row cursor-pointer items-center justify-center">
                         <img className="h-24" src="/images/logo.png"></img>
                         <div className="flex flex-col pl-6">
-                            <h1 className="font-light -mb-0.5 text-2xl">Children's</h1>
-                            <h1 className="font-light -mb-0.5 -mt-0.5 text-2xl">International</h1>
-                            <h1 className="font-light -mt-0.5 text-2xl">Learning Centre</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 text-2xl">Children's</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 -mt-0.5 text-2xl">International</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light -mt-0.5 text-2xl">Learning Centre</h1>
                         </div>
                     </div>
                 </Link>
@@ -28,16 +28,16 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="flex flex-row">
-                        <Navlinks dropdown = "Team,Organization" toward="/about">
+                        <Navlinks dropdown = "Team,Organization" toward="/about" color="gold">
                             About
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/resources">
+                        <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/resources" color="cilcpurple">
                             Resources
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks toward="/programmes">Programmes</Navlinks>
-                        <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/join-us">
+                        <Navlinks toward="/programmes" color="cilcgreen">Programmes</Navlinks>
+                        <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/join-us" color="cilcblue">
                             Join Us
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
