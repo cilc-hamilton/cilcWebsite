@@ -9,9 +9,9 @@ const Videos=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Some more info about the CILC" image="/images/Bengali-Indian Dance.jpg"/>
+                <Header image="a" color="cilcpurple"/>
                 <Section>
-                    <div className="grid w-full h-fit gap-y-8 gap-x-8 min-[900px]:grid-cols-[repeat(auto-fit,minmax(40rem,1fr))] grid-cols-[repeat(auto-fit,minmax(40rem,1fr))]">
+                    <div className="grid w-full h-fit gap-y-8 gap-x-8 min-[900px]:grid-cols-[repeat(auto-fit,minmax(30rem,1fr))]">
                         <Video vid="_Rdp1Q4bNhU"/>
                         <Video vid="5zx6yAg_QFQ"/>
                         <Video vid="1mKjV4e159M"/>

@@ -8,7 +8,7 @@ const Org = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Who we are and what we do" image="/images/IMG_7311.jpg"/>
+                <Header image="a" color="gold"/>
                 <Section color="white">
                     <h3>Who we are</h3>
                     <hr className="bg-deepblue"/>
@@ -16,7 +16,7 @@ const Org = () => {
                     <br/>
                     <h3>Land Acknowledgement</h3>
                     <hr className="bg-deepblue"/>
-                    <p>The City of Hamilton and the Children’s International Learning Centre are situated on the traditional territory of the Erie, Neutral, Huron-Wendat, Haudenosaunee, and Mississauga Nations. This land is covered by the Dish with One Spoon Wampum Belt, which was an agreement between the Haudenosaunee and the Anishinaabek  to share and care for the resources around the Great Lakes. We further acknowledge that this land is covered by the Between the Lakes Purchase, 1792, between the Crown and  the Mississaugas of the Credit First Nation.</p>
+                    <p>The City of Hamilton and the Children's International Learning Centre are situated on the traditional territory of the Erie, Neutral, Huron-Wendat, Haudenosaunee, and Mississauga Nations. This land is covered by the Dish with One Spoon Wampum Belt, which was an agreement between the Haudenosaunee and the Anishinaabek  to share and care for the resources around the Great Lakes. We further acknowledge that this land is covered by the Between the Lakes Purchase, 1792, between the Crown and  the Mississaugas of the Credit First Nation.</p>
                     <br/>
                     <p>This land acknowledgement marks an important step in the process of Truth and Reconciliation, honouring the land and becoming better informed neighbours and partners.</p>
                     <br/>

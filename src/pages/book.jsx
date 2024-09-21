@@ -10,7 +10,7 @@ const Books=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="The best reads for students of all ages" image="/images/Bengali-Indian Dance.jpg"/>
+                <Header image="a" color="cilcpurple"/>
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h3 className="text-white">Our top book recommendations for students, by recommended age:</h3>

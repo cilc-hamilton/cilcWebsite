@@ -5,17 +5,13 @@ function Contactform(props){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    let displays="hidden"
-    if (props.displaying=="Contactform"){
-        displays="flex"
-    }
     let height=""
     if (props.formHeight=="full"){
         height="h-full "
     }
     return (
         <>
-            <div className={height+displays+" justify-center items-center flex-col items-center justify-center w-full overflow-hidden p-8 bg-cilcpurple box-border"}>
+            <div className={height+" justify-center items-center flex-col items-center justify-center w-full overflow-hidden p-8 bg-cilcpurple box-border"}>
                 <form className="w-full" id = "emailer" action = "https://api.web3forms.com/submit" method = "POST">
                     <input className="w-full" type = "hidden" name = "apikey" value = "db4b95b0-b98c-4e07-b484-1429e8f1e9da" readOnly/>
                     <label className="text-white" htmlFor="name">Name</label><br/>

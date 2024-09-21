@@ -8,7 +8,7 @@ const Member = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Gain access to exclusive perks" image="/images/IMG_3209.jpg"/>
+                <Header image="a" color="cilcblue"/>
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h3 className="text-white">Contribute to our mission</h3>

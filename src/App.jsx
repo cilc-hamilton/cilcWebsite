@@ -11,7 +11,6 @@ import Donate from "./pages/donate.jsx"
 import Resources from "./pages/resources.jsx"
 import Joinus from "./pages/joinus.jsx"
 import Programmes from "./pages/programmes.jsx"
-import More from "./pages/more.jsx"
 import Member from "./pages/membership.jsx";
 import Support from "./pages/supporters.jsx";
 import Volunteer from "./pages/volunteer.jsx";
@@ -42,7 +41,6 @@ function App() {
           <Route path="/join-us/become-a-member" element={<Member/>}/>
           <Route path="/join-us/supporters" element={<Support/>}/>
           <Route path="/programmes" element={<Programmes/>}/>
-          <Route path="/more" element={<More/>}/>
         </Routes>
       </Router>
     </>

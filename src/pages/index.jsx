@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Welcome to the CILC" image="/images/home.jpg" component=""/>
+                <Header image="a" color="white"/>
                 <Section color="white">
                     <Card color = "cilcgreen">
                         <h3>Land Acknowledgement</h3>
@@ -20,7 +20,7 @@ const Home = () => {
                     </Card>
                 </Section>
                 <Section color="cilcgrey">
-                    <h1 className="font-bold">Welcome to the Childen's International Learning Center</h1>
+                    <h1 className="font-bold">Welcome to the Childen's International Learning Centre</h1>
                     <hr className="bg-deepblue"/>
                     <p>The Children's International Learning Centre (CILC) was established with the vision of contributing to a world of care and respect for all people and our environment.  We endeavour to do this by promoting respect for diversity and awareness of our world community through guided discovery and interactive artistic travelling programmes. Our website is always open with activities and resources.</p>
                 </Section>

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../navbar/navbar.jsx"
 import Mobilenav from "../navbar/mobile.jsx";
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link, Outlet } from 'react-router-dom';
 import { FaArrowDown } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import Maps from "./maps.jsx";
@@ -15,33 +15,71 @@ function Header(props){
         location[0]="home"
     }
     for (let i=0; i<location.length; i++){
-        location[i]=location[i][0].toUpperCase() + location[i].substr(1);
+        if (location[i]!="a"){
+            location[i]=location[i][0].toUpperCase() + location[i].substr(1);
+        }
     }
-    let imgDisplay="flex"
-    if (props.image==""){
-        imgDisplay="hidden"
+    const [loc1, setLoc1] = useState('/about')
+    const [nam1, setNam1] = useState('About the CILC')
+    const [loc2, setLoc2] = useState('/join-us')
+    const [nam2, setNam2] = useState('Ways to Help')
+    useEffect(()=>{
+        if (location[0]=='About'){
+            setLoc1('/programmes')
+            setNam1('Our Programmes')
+        }
+        if (location[0]=='Join'){
+            setLoc2('/donate')
+            setNam2('Donate Now!')
+        }
+    }, [])
+
+    const colours = {
+        "cilcblue": "87,171,196",
+        "cilcdarkblue": "53,128,151",
+        "cilcgreen": "189,216,79",
+        "cilcpurple": "73,60,151",
+        "cilcred": "219,25,40",
+        "cilcmedblue": "0,102,204",
+        "cilcgrey": "240,240,240",
+        "cilcgray": "#224,224,224",
+        "deepblue": "33,53,71",
+        "gold": '247,208,0',
+        "white": '255,255,255',
     }
+    let colour = props.color
+    if (colour == ""){
+        colour = "white"
+    }
+    if (colours.hasOwnProperty(colour)){
+        colour = colours[colour]
+    }
+
     return (
         <>
             <Navbar/>
             <Mobilenav/>
             <div className="w-screen overflow-hidden flex flex-col min-[900px]:flex-row items-center justify-center h-fit min-[900px]:h-[600px] min-[900px]:w-screen">
-                {/* <div className="w-screen min-[900px]:w-[30vw] flex flex-col items-center justify-center h-full grow-0 box-border p-8 bg-cilcmedblue">
-                    <h1 className="text-[2em] font-semibold text-white text-5xl pb-2 text-center">{location.join(" ")}</h1>
-                    <h2 className="text-white text-2xl pb-4">{props.desc}</h2>
-                    <div className="rounded bg-[#ffffff44] group w-10 h-10 overflow-hidden mt-4 cursor-pointer">
-                        <IconContext.Provider value={{ color: "white", size: "1.5rem" }}>
-                            <FaArrowDown className="relative left-[50%] -translate-x-1/2 transition ease-out -translate-y-10 group-hover:delay-200 group-hover:translate-y-2"/>
-                            <FaArrowDown className="relative left-[50%] -translate-x-1/2 transition ease-out -translate-y-4 delay-200 group-hover:delay-[0s] duration-300 group-hover:translate-y-8"/>
-                        </IconContext.Provider>
-                    </div>
-                </div> */}
-                <div className={imgDisplay+" flex items-center justify-center w-screen overflow-hidden"}>
-                    {/* <img className="w-screen min-[900px]:w-[70vw] h-[600px] object-cover" src={props.image}></img> */}
+                <div className={"flex items-center justify-center w-screen overflow-hidden"}>
                     <img className="w-screen h-[600px] object-cover" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></img>
                 </div>
-                <Maps displaying={props.component}/>
-                <Contactform displaying={props.component} formHeight={props.formHeight}/>
+            </div>
+            <div className="h-24 w-4/5 top-[28rem] left-[10%] flex flex-col min-[900px]:flex-row items-center justify-center absolute">
+                <Link className="h-full w-full min-[900px]:w-[30%]" to={loc1}>
+                    <div className="transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
+                        <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam1}</h3>
+                    </div>
+                </Link>
+                <div className="w-[5%] h-4 hidden min-[900px]:block"/>
+                <div style={{ backgroundColor: 'rgba('+colour+',0.1)', border: '4px solid rgb('+colour+')', boxShadow: '0 0 20px 0 rgba('+colour+',0.4)' }} className="border-2 w-full min-[900px]:w-[30%] h-full flex p-4 items-center justify-center">
+                    <h3 className='text-[1.6rem] flex items-center justify-center text-center'>{location.join(' ')}</h3>
+                </div>
+                <div className="w-[5%] h-4 hidden min-[900px]:block"/>
+                <Link className="h-full w-full min-[900px]:w-[30%]" to={loc2}>
+                    <div className="transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full flex p-4 items-center justify-center hidden min-[900px]:flex">
+                        <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam2}</h3>
+                    </div>
+                </Link>
             </div>
         </>
     )

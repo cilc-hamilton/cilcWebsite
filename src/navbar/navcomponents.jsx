@@ -55,21 +55,45 @@ function Navlinks(props) {
             return rows
         } return
     }
+    if (props.toward=='more'){
+        return(
+            <>
+                <div className = "inline-flex flex-col relative" onMouseEnter={handleHover} onMouseLeave={handleOff}>
+                    <div style={{borderColor:colour}} className={"flex flex-row px-4 min-[900px]:px-6 py-1 pt-3 px-3 cursor-pointer border-b-4 border-solid hover:brightness-0 min-[900px]:hover:brightness-90 min-[900px]:bg-white"+h}>
+                        <h2 className="flex flex-row items-center justify-center gap-2">{props.children}</h2>
+                    </div>
+                    <div style={{
+                        display: dropDisplay, 
+                        flexDirection: "column", 
+                        clipPath: "inset(2.25rem -1rem -1rem -1rem)",
+                    }} className="absolute -z-10 w-0 min-w-full">
+                        <div className="h-[1.8rem] box-content my-2 border-b-4 border-white"></div>
+                        <div className="flex flex-col shadow-[0_5px_5px_2px_rgba(0,0,0,0.2)]">
+                            {addDrops()}
+                        </div>
+                    </div>
+                    <Outlet/>
+                </div>
+            </>
+        )
+    }
     return (
         <>
             <div className = "inline-flex flex-col relative" onMouseEnter={handleHover} onMouseLeave={handleOff}>
                 <Link to={props.toward}>
-                    <div style={{borderColor:colour}} className={"flex flex-row px-4 min-[900px]:px-6 py-1 px-3 cursor-pointer border-b-4 border-solid hover:brightness-0"+h}>
-                        <h2 className="flex flex-row items-center justify-center">{props.children}</h2>
+                    <div style={{borderColor:colour}} className={"flex flex-row px-4 min-[900px]:px-6 py-1 pt-3 px-3 cursor-pointer border-b-4 border-solid hover:brightness-0 min-[900px]:hover:brightness-90 min-[900px]:bg-white"+h}>
+                        <h2 className="flex flex-row items-center justify-center gap-2">{props.children}</h2>
                     </div>
                 </Link>
                 <div style={{
                     display: dropDisplay, 
                     flexDirection: "column", 
                     clipPath: "inset(2.25rem -1rem -1rem -1rem)",
-                }} className="absolute -z-10 w-0 min-w-full shadow-[0_10px_10px_0_rgba(0,0,0,0.2)]">
-                    <div className="h-[1.2em] box-content my-2 border-b-4 border-white"></div>
-                    {addDrops()}
+                }} className="absolute -z-10 w-0 min-w-full">
+                    <div className="h-[1.8rem] box-content my-2 border-b-4 border-white"></div>
+                    <div className="flex flex-col shadow-[0_5px_5px_2px_rgba(0,0,0,0.2)]">
+                        {addDrops()}
+                    </div>
                 </div>
                 <Outlet/>
             </div>
@@ -79,7 +103,7 @@ function Navlinks(props) {
 function Navbuttons(props) {
     return (
         <>
-            <div className="filter px-6 py-3 bg-cilcblue cursor-pointer ml-8 hover:brightness-110">
+            <div className="filter px-6 py-3 bg-cilcdarkblue cursor-pointer ml-8 hover:brightness-110">
                 <h2 className="text-white flex flex-row items-center justify-center">{props.children}</h2>
             </div>
         </>
@@ -90,7 +114,7 @@ function Donatebutton() {
     return (
         <>
             <div className="flex flex-row" onMouseOver={() => {setWidth(48)}} onMouseLeave={() => {setWidth(0)}}>
-                <div style={{maxWidth: width+'rem', transition: "max-width 1s"}} className={"flex flex-row ml-8 overflow-hidden"}>
+                <div style={{maxWidth: width+'rem', transition: "max-width 1s" }} className={"lg:flex flex-row overflow-hidden hidden"}>
                     <Link to="https://www.canadahelps.org/en/dn/35893?v2=true">
                         <div style={{maxWidth: width+'rem', transition: "max-width 1s"}} className={"bg-cilcgreen px-6 py-3 cursor-pointer hover:brightness-110"}>
                             <h2>CanadaHelps</h2>

@@ -9,7 +9,7 @@ const Team = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="The people behind the CILC" image="/images/IMG_7311.jpg"/>
+                <Header image="a" color="gold"/>
                 <Section color="white">
                     <h3>Our team</h3>
                     <hr className="bg-deepblue"/>

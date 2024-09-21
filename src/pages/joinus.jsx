@@ -9,7 +9,7 @@ const Joinus = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Join our phenomenal team and give back to your community" image="/images/IMG_3209.jpg"/>
+                <Header image="a" color="cilcblue"/>
                 <Section color="white">
                     <Card color="gold">
                         <h1 className="font-bold">We Need You!</h1>

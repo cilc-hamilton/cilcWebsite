@@ -9,7 +9,7 @@ const Donate = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Help us out on our journey!" image="/images/IMG_3209.jpg"/>
+                <Header image="a" color="cilcred"/>
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h1 className="font-bold text-white">Make a donation!</h1>

@@ -13,7 +13,7 @@ function Profileholder(props){
 function Profile(props){
     return (
         <>
-            <div className="p-8 bg-cilcgrey w-full flex flex-col justify-center items-center">
+            <div className="p-8 bg-cilcgray w-full flex flex-col justify-center items-center">
                 <img className="w-64" src={props.image}></img>
                 <br/>
                 <h3 className="text-center">{props.name}</h3>

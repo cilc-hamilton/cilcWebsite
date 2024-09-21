@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 :root {
   font-family: "Roboto";
@@ -37,6 +36,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
+  font-family: "Libre Baskerville", serif;
 }
 h4 {
   font-size: 1.4rem;
@@ -95,3 +95,5 @@ ul {
   font-family: centuryFont;
   src: url(century.otf);
 }
+
+@tailwind utilities;

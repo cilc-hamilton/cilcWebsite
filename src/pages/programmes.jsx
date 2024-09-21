@@ -8,7 +8,7 @@ const Programmes = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="What we offer" image="/images/Bengali-Indian Dance.jpg"/>
+                <Header image="a" color="cilcgreen"/>
                 <Section color="white">
                     
                 </Section>

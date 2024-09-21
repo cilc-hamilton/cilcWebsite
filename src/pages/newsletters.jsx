@@ -9,7 +9,7 @@ const Newsletters=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header desc="Sneak peek at an exclusive membership perk" image="/images/Bengali-Indian Dance.jpg"/>
+                <Header image="a" color="cilcpurple"/>
                 <Section color="white">
                     <h3>Check out some of our past newsletters below!</h3>
                     <hr className="bg-deepblue"/>
