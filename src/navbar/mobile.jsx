@@ -83,7 +83,7 @@ function Mobilenav() {
                     </div>
                 </div>
             </div>
-            <div style={{ width: showMenu }} className="transition-all overflow-x-hidden h-screen fixed min-[900px]:!hidden flex flex-col py-12 bg-white z-40 top-0 right-0 items-start justify-start">
+            <div style={{ width: showMenu }} className="p-4 transition-all overflow-x-hidden h-screen fixed min-[900px]:!hidden flex flex-col py-12 bg-white z-40 top-0 right-0 items-start justify-start">
                 <div className="flex items-center justify-center w-full mb-4 p-4">
                     <div style={{ display: showBack }} className="cursor-pointer" onClick={()=>{setMenuState('home')}}>
                         <IconContext.Provider value={{ size: "1.5rem" }}>
