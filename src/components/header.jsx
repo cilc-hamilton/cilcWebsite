@@ -19,17 +19,17 @@ function Header(props){
             location[i]=location[i][0].toUpperCase() + location[i].substr(1);
         }
     }
-    const [loc1, setLoc1] = useState('/about')
+    const [loc1, setLoc1] = useState('/#/about')
     const [nam1, setNam1] = useState('About the CILC')
-    const [loc2, setLoc2] = useState('/join-us')
+    const [loc2, setLoc2] = useState('/#/join-us')
     const [nam2, setNam2] = useState('Ways to Help')
     useEffect(()=>{
         if (location[0]=='About'){
-            setLoc1('/programmes')
+            setLoc1('/#/programmes')
             setNam1('Our Programmes')
         }
         if (location[0]=='Join'){
-            setLoc2('/donate')
+            setLoc2('/#/donate')
             setNam2('Donate Now!')
         }
     }, [])
@@ -66,7 +66,7 @@ function Header(props){
             </div>
             <div className="h-24 w-4/5 top-[28rem] left-[10%] flex flex-col min-[900px]:flex-row items-center justify-center absolute">
                 <Link className="h-full w-full min-[900px]:w-[30%]" to={loc1}>
-                    <div className="animate-pulse transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
+                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
                         <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam1}</h3>
                     </div>
                 </Link>
@@ -76,7 +76,7 @@ function Header(props){
                 </div>
                 <div className="w-[5%] h-4 hidden min-[900px]:block"/>
                 <Link className="h-full w-full min-[900px]:w-[30%]" to={loc2}>
-                    <div className="animate-pulse transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full flex p-4 items-center justify-center hidden min-[900px]:flex">
+                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full flex p-4 items-center justify-center hidden min-[900px]:flex">
                         <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam2}</h3>
                     </div>
                 </Link>
