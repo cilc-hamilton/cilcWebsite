@@ -47,7 +47,7 @@ function Navlinks(props) {
                 let subLink = inputRows[i].toLowerCase()
                 subLink = subLink.replaceAll(" ", "-")
                 rows.push(
-                    <Link key={i} to={"/#/"+props.toward+"/"+subLink}>
+                    <Link key={i} to={props.toward+"/"+subLink}>
                         <h2 className={"bg-white px-6 py-2 flex flex-"+flexD+" items-center justify-center hover:brightness-90"}>{inputRows[i]}</h2>
                     </Link>
                 )
@@ -126,7 +126,7 @@ function Donatebutton() {
                         </div>
                     </Link>
                 </div>
-                <Link to="/#/donate">
+                <Link to="/donate">
                     <div className="filter flex flex-row px-6 py-3 bg-cilcred cursor-pointer hover:brightness-110">
                         <h2 className="text-white flex flex-row items-center justify-center">Donate Now!</h2>
                     </div>

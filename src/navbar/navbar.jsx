@@ -46,7 +46,7 @@ function Navbar() {
     return (
         <>
             <div className="h-36 z-30 hidden flex-row bg-white w-screen px-12 fixed top-0 left-0 box-border shadow-[0_10px_10px_0_rgba(0,0,0,0.2)] items-stretch min-[900px]:flex">
-                <Link className="flex items-center justify-center" to="/#/">
+                <Link className="flex items-center justify-center" to="/">
                     <div className="flex flex-row cursor-pointer items-center justify-center">
                         <img className="h-24" src="/images/logo.png"></img>
                         <div className="flex flex-col pl-6">
@@ -59,24 +59,24 @@ function Navbar() {
                 <div className="grow"></div>
                 <div className="flex flex-col justify-end items-end">
                     <div className="flex flex-row mb-4 gap-4">
-                        <Link to="/#/contact">
+                        <Link to="/contact">
                             <Navbuttons>Contact Us</Navbuttons>
                         </Link>
-                        <Link to="/#/donate">
+                        <Link to="/donate">
                             <Donatebutton/>
                         </Link>
                     </div>
                     <div className="flex-row hidden lg:flex">
-                        <Navlinks dropdown = "Team,Organization" toward="/#/about" color="gold">
+                        <Navlinks dropdown = "Team,Organization" toward="/about" color="gold">
                             About
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/#/resources" color="cilcpurple">
+                        <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/resources" color="cilcpurple">
                             Resources
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks toward="/#/programmes" color="cilcgreen">Programmes</Navlinks>
-                        <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/#/join-us" color="cilcblue">
+                        <Navlinks toward="/programmes" color="cilcgreen">Programmes</Navlinks>
+                        <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/join-us" color="cilcblue">
                             Join Us
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
@@ -105,11 +105,11 @@ function Navbar() {
                 </div>
                 <div className="w-full overflow-x-hidden flex flex-row items-start justify-center">
                     <div style={{ width: showHome }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/#/">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/">
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Home</h2>
                         </Link>
                         <div className="w-full flex flex-row">
-                            <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/#/about">
+                            <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/about">
                                 <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">About</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('about')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
@@ -121,7 +121,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="w-full flex flex-row">
-                            <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/#/resources">
+                            <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/resources">
                                 <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Resources</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('resources')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
@@ -132,11 +132,11 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/#/programmes">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/programmes">
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Programmes</h2>
                         </Link>
                         <div className="w-full flex flex-row">
-                            <Link className="w-full flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/#/join-us">
+                            <Link className="w-full flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/join-us">
                                 <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Join Us</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('join')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
@@ -149,16 +149,16 @@ function Navbar() {
                         </div>
                     </div>
                     <div style={{ width: showAbout }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/#/about">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/about">
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">About</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/about/team">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/about/team">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Team</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/about/organization">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/about/organization">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
@@ -166,22 +166,22 @@ function Navbar() {
                         </Link>
                     </div>
                     <div style={{ width: showResources }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/#/resources">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/resources">
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Resources</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/resources/team">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/team">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Book Nook</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/resources/organization">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/organization">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Past Newsletters</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/resources/videos">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/videos">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
@@ -189,22 +189,22 @@ function Navbar() {
                         </Link>
                     </div>
                     <div style={{ width: showJoin }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/#/join-us">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/join-us">
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Join Us</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/join-us/volunteer">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/volunteer">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Volunteer</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/join-us/become-a-member">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/become-a-member">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
                             <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Become a Member</h2>
                         </Link>
-                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/#/join-us/supporters">
+                        <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/supporters">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
