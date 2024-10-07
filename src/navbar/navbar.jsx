@@ -89,7 +89,7 @@ function Navbar() {
                 </div>
             </div>
             <Outlet/>
-            <div style={{ width: showMenu }} className="transition-all overflow-x-hidden h-screen fixed lg:!hidden hidden min-[900px]:flex flex-col py-12 bg-white z-40 top-0 right-0 shadow-[-10px_0_10px_0_rgba(0,0,0,0.2)] items-start justify-start">
+            <div style={{ width: showMenu }} className="transition-all overflow-x-hidden h-screen fixed lg:!hidden hidden min-[900px]:flex flex-col py-12 bg-white z-40 top-0 right-0 shadow-[-10px_0_10px_0_rgba(0,0,0,0.2)] items-start justify-start box-content">
                 <div className="flex items-center justify-center w-full mb-4 p-4">
                     <div style={{ display: showBack }} className="cursor-pointer" onClick={()=>{setMenuState('home')}}>
                         <IconContext.Provider value={{ size: "1.5rem" }}>

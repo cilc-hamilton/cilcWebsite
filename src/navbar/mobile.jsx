@@ -9,7 +9,8 @@ import { IconContext } from "react-icons";
 import { IoIosClose } from "react-icons/io";
 
 function Mobilenav() {
-    const [showMenu, setShowMenu] = useState('10px')
+    const [showMenu, setShowMenu] = useState('0px')
+    const [showPadding, setShowPadding] = useState('0')
     const [menuState, setMenuState] = useState('home')
     const [showHome, setShowHome] = useState('100%')
     const [showAbout, setShowAbout] = useState('0')
@@ -44,6 +45,14 @@ function Mobilenav() {
             setShowBack('block')
         }
     }, [menuState])
+
+    useEffect(()=>{
+        if (showMenu=='0px'||showMenu=='0'){
+            setShowPadding(0)
+        } else {
+            setShowPadding('1rem')
+        }
+    }, [showMenu])
 
     return (
         <>
@@ -83,7 +92,7 @@ function Mobilenav() {
                     </div>
                 </div>
             </div>
-            <div style={{ width: showMenu }} className="p-4 transition-all overflow-x-hidden h-screen fixed min-[900px]:!hidden flex flex-col py-12 bg-white z-40 top-0 right-0 items-start justify-start">
+            <div style={{ width: showMenu, padding: showPadding }} className="p-4 transition-all overflow-x-hidden h-screen fixed min-[900px]:!hidden flex flex-col py-12 bg-white z-40 top-0 right-0 items-start justify-start">
                 <div className="flex items-center justify-center w-full mb-4 p-4">
                     <div style={{ display: showBack }} className="cursor-pointer" onClick={()=>{setMenuState('home')}}>
                         <IconContext.Provider value={{ size: "1.5rem" }}>
