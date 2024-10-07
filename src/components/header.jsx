@@ -64,7 +64,7 @@ function Header(props){
                     <img className="w-screen h-[600px] object-cover" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></img>
                 </div>
             </div>
-            <div className="h-24 w-4/5 top-[28rem] left-[10%] flex flex-col min-[900px]:flex-row items-center justify-center absolute">
+            <div className="h-24 w-4/5 top-[440px] left-[10%] flex flex-col min-[900px]:flex-row items-center justify-center absolute">
                 <Link className="h-full w-full min-[900px]:w-[30%]" to={loc1}>
                     <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
                         <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam1}</h3>

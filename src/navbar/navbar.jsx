@@ -50,9 +50,9 @@ function Navbar() {
                     <div className="flex flex-row cursor-pointer items-center justify-center">
                         <img className="h-24" src="/images/logo.png"></img>
                         <div className="flex flex-col pl-6">
-                            <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 text-2xl">Children's</h1>
-                            <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 -mt-0.5 text-2xl">International</h1>
-                            <h1 style={{fontFamily: 'century'}} className="font-light -mt-0.5 text-2xl">Learning Centre</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light text-[#287CC0] -mb-0.5 text-2xl">Children's</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light text-[#287CC0] -mb-0.5 -mt-0.5 text-2xl">International</h1>
+                            <h1 style={{fontFamily: 'century'}} className="font-light text-[#287CC0] -mt-0.5 text-2xl">Learning Centre</h1>
                         </div>
                     </div>
                 </Link>
