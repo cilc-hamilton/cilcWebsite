@@ -20,8 +20,8 @@ function Contactform(props){
                     <input className="w-full mb-4 p-2" id = "email" type = "email" name = "email" placeholder = "Your email" value = {email} onChange={(e) => setEmail(e.target.value)} required/>
                     <label className="text-white" htmlFor="message">Message</label><br/>
                     <textarea className="w-full mb-4 p-2 resize-none h-48" id = "message" name = "message" placeholder = "Your message" value = {message} onChange={(e) => setMessage(e.target.value)} required/>
-                    <input type="hidden" name="redirect" value="https://cilc-website.vercel.app/contact"/>
-                    <input className="bg-gold" type = "submit"></input>
+                    <input type="hidden" name="redirect" value={window.location.href}/>
+                    <input className="bg-gold !rounded-none w-full hover:brightness-110" type = "submit"></input>
                 </form>
             </div>
         </>

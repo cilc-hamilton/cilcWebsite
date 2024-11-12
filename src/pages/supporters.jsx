@@ -8,7 +8,7 @@ const Support = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="a" color="cilcblue"/>
+                <Header image="" color="cilcblue"/>
                 <Section color="white">
                     <Card color="gold">
                         <h3 className="font-bold">The CILC would like to thank the following for their generous support:</h3>

@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="a" color="white"/>
+                <Header image="" color="white"/>
                 <Section color="white">
                     <Card color = "cilcgreen">
                         <h3>Land Acknowledgement</h3>

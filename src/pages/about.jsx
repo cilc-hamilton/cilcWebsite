@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="a" color="gold"/>
+                <Header image="images/headers/ASF07949.jpg" color="gold"/>
                 <Section color="white">
                     <h3>Who we are</h3>
                     <hr className="bg-deepblue"/>

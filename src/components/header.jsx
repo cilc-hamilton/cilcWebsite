@@ -61,22 +61,22 @@ function Header(props){
             <Mobilenav/>
             <div className="w-screen overflow-hidden flex flex-col min-[900px]:flex-row items-center justify-center h-fit min-[900px]:h-[600px] min-[900px]:w-screen">
                 <div className={"flex items-center justify-center w-screen overflow-hidden"}>
-                    <img className="w-screen h-[600px] object-cover" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></img>
+                    <img className="w-screen h-[600px] object-cover" src={props.image||"https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}></img>
                 </div>
             </div>
             <div className="h-24 w-4/5 top-[440px] left-[10%] flex flex-col min-[900px]:flex-row items-center justify-center absolute">
                 <Link className="h-full w-full min-[900px]:w-[30%]" to={loc1}>
-                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
+                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.8)] h-full p-4 items-center justify-center hidden min-[900px]:flex">
                         <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam1}</h3>
                     </div>
                 </Link>
                 <div className="w-[5%] h-4 hidden min-[900px]:block"/>
-                <div style={{ backgroundColor: 'rgba('+colour+',0.1)', border: '4px solid rgb('+colour+')', boxShadow: '0 0 20px 0 rgba('+colour+',0.4)' }} className="border-2 w-full min-[900px]:w-[30%] h-full flex p-4 items-center justify-center">
+                <div style={{ backgroundColor: 'rgba('+colour+',0.6)', border: '4px solid rgb('+colour+')', boxShadow: '0 0 20px 0 rgba('+colour+',0.8)' }} className="border-2 w-full min-[900px]:w-[30%] h-full flex p-4 items-center justify-center">
                     <h3 className='text-[1.6rem] flex items-center justify-center text-center'>{location.join(' ')}</h3>
                 </div>
                 <div className="w-[5%] h-4 hidden min-[900px]:block"/>
                 <Link className="h-full w-full min-[900px]:w-[30%]" to={loc2}>
-                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.2)] h-full flex p-4 items-center justify-center hidden min-[900px]:flex">
+                    <div className="animate-pulse hover:!animate-none transition-all border-4 border-transparent hover:border-white shadow-[0_0_20px_0_rgba(0,0,0,0.2)] w-full hover:brightness-200 bg-[rgba(255,255,255,0.8)] h-full flex p-4 items-center justify-center hidden min-[900px]:flex">
                         <h3 className='text-[1.5rem] flex items-center justify-center text-center'>{nam2}</h3>
                     </div>
                 </Link>

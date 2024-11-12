@@ -9,7 +9,7 @@ const Videos=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="a" color="cilcpurple"/>
+                <Header image="" color="cilcpurple"/>
                 <Section>
                     <div className="grid w-full h-fit gap-y-8 gap-x-8 min-[900px]:grid-cols-[repeat(auto-fit,minmax(30rem,1fr))]">
                         <Video vid="_Rdp1Q4bNhU"/>

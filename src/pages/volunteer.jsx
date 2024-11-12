@@ -8,7 +8,7 @@ const Volunteer = () => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="a" color="cilcblue"/>
+                <Header image="" color="cilcblue"/>
                 <Section color="white">
                     <p className="mb-8">We are a not-for-profit, volunteer driven organization.  Since 1970, we have been grateful for the generous support of volunteers who have given their gift of time. If you would like to contribute your time and energy,  and/or are looking for opportunities to develop and enhance your skill set, we look forward to hearing from you.  Kindly note that we require our volunteers to submit a Vulnerable Sector Criminal Reference Check for some positions.</p>
                     <Card color="cilcgreen">

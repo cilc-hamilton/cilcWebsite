@@ -8,7 +8,7 @@ const Celebrations=() => {
     return (
         <>
             <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header color="cilcpurple" image="a"/>
+                <Header color="cilcpurple" image=""/>
                 <Footer/>
             </div>
         </>
