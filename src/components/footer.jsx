@@ -21,7 +21,7 @@ function Footer(props){
                     </div>
                     <hr className="bg-white"/>
                 </div>
-                <div className="flex flex-row gap-x-4 no-wrap w-full px-4">
+                <nav className="flex flex-row gap-x-4 no-wrap w-full px-4">
                     <Link className="w-1/5" to="/about">
                         <p className="text-white w-full text-center hover:underline">About</p>
                     </Link>
@@ -37,7 +37,7 @@ function Footer(props){
                     <Link className="w-1/5" to="/contact-us">
                         <p className="text-white w-full text-center hover:underline">Contact Us</p>
                     </Link>
-                </div>
+                </nav>
             </div>
             <div className="h-16 min-[900px]:h-0"></div>
         </>

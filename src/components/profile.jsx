@@ -3,7 +3,7 @@ import React from "react";
 function Profileholder(props){
     return (
         <>
-            <div className="grid w-full h-fit gap-8 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+            <div className="grid w-full h-fit gap-8 grid-cols-[repeat(auto-fit,minmax(24rem,1fr))]">
                 {props.children}
             </div>
         </>

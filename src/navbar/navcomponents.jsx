@@ -115,16 +115,16 @@ function Donatebutton() {
         <>
             <div className="flex flex-row" onMouseOver={() => {setWidth(48)}} onMouseLeave={() => {setWidth(0)}}>
                 <div style={{maxWidth: width+'rem', transition: "max-width 1s" }} className={"lg:flex flex-row overflow-hidden hidden"}>
-                    <Link to="https://www.canadahelps.org/en/dn/35893?v2=true">
+                    <a href="https://www.canadahelps.org/en/dn/35893?v2=true" target="_blank" rel="noopener noreferrer">
                         <div style={{maxWidth: width+'rem', transition: "max-width 1s"}} className={"bg-cilcgreen px-6 py-3 cursor-pointer hover:brightness-110"}>
                             <h2>CanadaHelps</h2>
                         </div>
-                    </Link>
-                    <Link to="https://www.paypal.com/ca/fundraiser/charity/3423778">
+                    </a>
+                    <a href="https://www.paypal.com/ca/fundraiser/charity/3423778" target="_blank" rel="noopener noreferrer">
                         <div style={{maxWidth: width+'rem', transition: "max-width 1s"}} className={"bg-gold px-6 py-3 cursor-pointer hover:brightness-110"}>
                             <h2>Paypal</h2>
                         </div>
-                    </Link>
+                    </a>
                 </div>
                 <Link to="/donate">
                     <div className="filter flex flex-row px-6 py-3 bg-cilcred cursor-pointer hover:brightness-110">

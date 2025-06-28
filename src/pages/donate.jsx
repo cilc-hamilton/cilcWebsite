@@ -19,12 +19,12 @@ const Donate = () => {
                         <p className="text-white">If you want to make a difference, consider making a donation below.</p>
                         <br/>
                         <div className="flex flex-row">
-                            <Link target="_blank" to="https://www.canadahelps.org/en/dn/35893?v2=true">
+                            <a href="https://www.canadahelps.org/en/dn/35893?v2=true" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-gold hover:brightness-110 mr-4">Donate through CanadaHelps</button>
-                            </Link>
-                            <Link target="_blank" to="https://www.paypal.com/ca/fundraiser/charity/3423778">
+                            </a>
+                            <a href="https://www.paypal.com/ca/fundraiser/charity/3423778" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-gold hover:brightness-110 mr-4">Donate through PayPal</button>
-                            </Link>
+                            </a>
                         </div>
                     </Card>
                 </Section>
