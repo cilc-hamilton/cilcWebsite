@@ -1,5 +1,3 @@
-import React from "react";
-
 function Book(props){
     let initials = props.author.split(" ").slice(0, 2)
     initials = (initials[0][0]+initials[1][0]).toUpperCase()

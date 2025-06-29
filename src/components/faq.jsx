@@ -1,10 +1,8 @@
-import React from "react";
-import Section from "../components/section";
 import { useState } from 'react'
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { IconContext } from "react-icons";
 
-function Faq(props){
+function Faq(){
     const [zero, setZero]=useState(false)
     const [one, setOne]=useState(false)
     const [two, setTwo]=useState(false)

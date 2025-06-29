@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Navlinks} from "./navcomponents"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { GrContact } from "react-icons/gr";
 import { BiSolidDonateHeart } from "react-icons/bi";

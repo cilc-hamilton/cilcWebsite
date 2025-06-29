@@ -1,5 +1,3 @@
-import React from "react";
-
 function Section(props){
     const colours = {
         "cilcblue": "#57ABC4",

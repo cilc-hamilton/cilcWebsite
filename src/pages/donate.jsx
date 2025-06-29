@@ -1,9 +1,7 @@
-import React from "react";
 import Header from "../components/header"
 import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
-import { Link } from "react-router-dom";
  
 const Donate = () => {
     return (

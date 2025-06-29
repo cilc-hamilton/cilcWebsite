@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Donatebutton } from "../navbar/navcomponents";
 
-function Footer(props){
+function Footer(){
     return (
         <>
             <div className="bg-cilcdarkblue w-screen py-12 min-[1000px]:px-24 min-[900px]:px-16 px-12 flex flex-col h-fit min-[1000px]:gap-x-16 min-[900px]:gap-x-12 gap-x-8 gap-y-8 p-8p">

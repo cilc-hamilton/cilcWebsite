@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Navlinks, Navbuttons, Donatebutton } from "./navcomponents"
 import { Outlet, Link } from "react-router-dom";
 import { GoChevronDown } from "react-icons/go";
@@ -62,9 +62,7 @@ function Navbar() {
                         <Link to="/contact">
                             <Navbuttons>Contact Us</Navbuttons>
                         </Link>
-                        <Link to="/donate">
-                            <Donatebutton/>
-                        </Link>
+                        <Donatebutton/>
                     </div>
                     <div className="flex-row hidden lg:flex">
                         <Navlinks dropdown = "Team,Organization" toward="/about" color="gold">

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Maps(props){
     let formDisplay = "hidden"
     if (props.displaying=="Maps"){
