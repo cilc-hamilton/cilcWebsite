@@ -22,7 +22,7 @@ function Contactform(props){
                     <label className="text-white" htmlFor="message">Message</label><br/>
                     <textarea className="w-full mb-4 p-2 resize-none h-48" id = "message" name = "message" placeholder = "Your message" value = {message} onChange={(e) => setMessage(e.target.value)} required/>
                     <input type="hidden" name="redirect" value={window.location.href}/>
-                    <input className="bg-gold !rounded-none w-full hover:brightness-110" type = "submit"></input>
+                    <input className="bg-gold rounded-none! w-full hover:brightness-110" type = "submit"></input>
                 </form>
             </div>
         </>

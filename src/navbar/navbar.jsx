@@ -87,7 +87,7 @@ function Navbar() {
                 </div>
             </div>
             <Outlet/>
-            <div style={{ width: showMenu }} className="transition-all overflow-x-hidden h-screen fixed lg:!hidden hidden min-[900px]:flex flex-col py-12 bg-white z-40 top-0 right-0 shadow-[-10px_0_10px_0_rgba(0,0,0,0.2)] items-start justify-start box-content">
+            <div style={{ width: showMenu }} className="transition-all overflow-x-hidden h-screen fixed lg:hidden! hidden min-[900px]:flex flex-col py-12 bg-white z-40 top-0 right-0 shadow-[-10px_0_10px_0_rgba(0,0,0,0.2)] items-start justify-start box-content">
                 <div className="flex items-center justify-center w-full mb-4 p-4">
                     <div style={{ display: showBack }} className="cursor-pointer" onClick={()=>{setMenuState('home')}}>
                         <IconContext.Provider value={{ size: "1.5rem" }}>
@@ -104,11 +104,11 @@ function Navbar() {
                 <div className="w-full overflow-x-hidden flex flex-row items-start justify-center">
                     <div style={{ width: showHome }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/">
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Home</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Home</h2>
                         </Link>
                         <div className="w-full flex flex-row">
                             <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/about">
-                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">About</h2>
+                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">About</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('about')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
                                 <div>
@@ -120,7 +120,7 @@ function Navbar() {
                         </div>
                         <div className="w-full flex flex-row">
                             <Link className="flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/resources">
-                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Resources</h2>
+                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Resources</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('resources')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
                                 <div>
@@ -131,11 +131,11 @@ function Navbar() {
                             </div>
                         </div>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/programmes">
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Programmes</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Programmes</h2>
                         </Link>
                         <div className="w-full flex flex-row">
                             <Link className="w-full flex items-center justify-start w-full py-4 px-8 bg-white hover:brightness-90" to="/join-us">
-                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Join Us</h2>
+                                <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Join Us</h2>
                             </Link>
                             <div onClick={()=>{setMenuState('join')}} className="cursor-pointer flex items-center align-center px-8 bg-white hover:brightness-90">
                                 <div>
@@ -148,65 +148,65 @@ function Navbar() {
                     </div>
                     <div style={{ width: showAbout }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/about">
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">About</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">About</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/about/team">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Team</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Team</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/about/organization">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Organization</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Organization</h2>
                         </Link>
                     </div>
                     <div style={{ width: showResources }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/resources">
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Resources</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Resources</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/team">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Book Nook</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Book Nook</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/organization">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Past Newsletters</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Past Newsletters</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/resources/videos">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Videos</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Videos</h2>
                         </Link>
                     </div>
                     <div style={{ width: showJoin }} className="transition-all overflow-x-hidden flex flex-col items-center align-center">
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-12 bg-white hover:brightness-90" to="/join-us">
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Join Us</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Join Us</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/volunteer">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Volunteer</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Volunteer</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/become-a-member">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Become a Member</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Become a Member</h2>
                         </Link>
                         <Link className="flex items-center justify-start w-full py-4 px-8 gap-4 bg-white hover:brightness-90" to="/join-us/supporters">
                             <IconContext.Provider value={{ size: "1.2rem" }}>
                                 <FaAngleRight/>
                             </IconContext.Provider>
-                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden !text-[1.2rem] flex flex-row items-center justify-start grow">Supporters</h2>
+                            <h2 className="whitespace-nowrap text-left flex-nowrap overflow-hidden text-[1.2rem]! flex flex-row items-center justify-start grow">Supporters</h2>
                         </Link>
                     </div>
                 </div>
