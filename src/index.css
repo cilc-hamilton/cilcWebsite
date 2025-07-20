@@ -1,5 +1,18 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-cilcblue: #57ABC4;
+  --color-cilcdarkblue: #358097;
+  --color-cilcgreen: #BDD84F;
+  --color-cilcpurple: #493C97;
+  --color-cilcred: #DB1928;
+  --color-cilcmedblue: #0066CC;
+  --color-cilcgrey: #F0F0F0;
+  --color-cilcgray: #E0E0E0;
+  --color-deepblue: #213547;
+  --color-gold: #F7D000;
+}
+
 @layer components {
   :root {
     font-family: 'Roboto';
