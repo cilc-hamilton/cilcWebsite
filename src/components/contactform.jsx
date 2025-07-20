@@ -8,11 +8,13 @@ function Contactform(props){
     if (props.formHeight=="full"){
         height="h-full "
     }
+
+    const key = import.meta.env.VITE_EMAIL_API_KEY;
     return (
         <>
             <div className={height+" justify-center items-center flex-col items-center justify-center w-full overflow-hidden p-8 bg-cilcpurple box-border"}>
                 <form className="w-full" id = "emailer" action = "https://api.web3forms.com/submit" method = "POST">
-                    <input className="w-full" type = "hidden" name = "apikey" value = "63b5faa5-d88a-4d03-8d46-4f9e568f5354" readOnly/>
+                    <input className="w-full" type = "hidden" name = "apikey" value = {key} readOnly/>
                     <label className="text-white" htmlFor="name">Name</label><br/>
                     <input className="w-full mb-4 p-2" id = "name" type = "text" name = "name" placeholder = "Your name" value = {name} onChange={(e) => setName(e.target.value)} required/>
                     <label className="text-white" htmlFor="email">Email</label><br/>

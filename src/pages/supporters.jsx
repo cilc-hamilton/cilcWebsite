@@ -1,29 +1,20 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import { HeaderlessPage } from "../components/page";
  
 const Support = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcblue"/>
+            <HeaderlessPage>
                 <Section color="white">
                     <Card color="gold">
                         <h3 className="font-bold">The CILC would like to thank the following for their generous support:</h3>
                         <hr className="bg-deepblue"/>
                         <ul className="list-inside w-full">
                             <li>City of Hamilton</li>
-                            <li>Ministry of Citizenship and Immigration</li>
                             <li>Hamilton Community Foundation</li>
                             <li>Patrick J McNally Charitable Foundation</li>
                         </ul>
-                    </Card>
-                    <br/>
-                    <Card color="cilcpurple">
-                        <h3 className="font-bold text-white">Honorary Patron</h3>
-                        <hr className="bg-white"/>
-                        <p className="text-white">Her Honour the Honourable Elizabeth Dowdeswell, OC OOnt, Former Lieutenant Governor of Ontario.</p>
                     </Card>
                     <br/>
                     <Card color="cilcgreen">
@@ -109,8 +100,7 @@ const Support = () => {
                         <li>Tapawingo Daycare</li>
                     </ul>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderlessPage>
         </>
     );
 };

@@ -1,13 +1,12 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import Contactform from "../components/contactform";
+import { HeaderedPage } from "../components/page";
  
 const Volunteer = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcblue"/>
+            <HeaderedPage image="/images/headers/volunteer.jpg" color="cilcblue">
                 <Section color="white">
                     <p className="mb-8">We are a not-for-profit, volunteer driven organization.  Since 1970, we have been grateful for the generous support of volunteers who have given their gift of time. If you would like to contribute your time and energy,  and/or are looking for opportunities to develop and enhance your skill set, we look forward to hearing from you.  Kindly note that we require our volunteers to submit a Vulnerable Sector Criminal Reference Check for some positions.</p>
                     <Card color="cilcgreen">
@@ -46,15 +45,12 @@ const Volunteer = () => {
                 </Section>
                 <Section color="white">
                     <Card color="cilcgreen">
-                        <h3>Interested? Fill out the form below:</h3>
+                        <h3>Interested? Fill out the form below and let us know why you want to become a volunteer:</h3>
                         <hr className="bg-deepblue"/>
-                        <div className="bg-white">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep-Jgml9aHtsZ6rYqHzHcotS4DHryw_aK0FHD-GEvQ-1TmaA/viewform?embedded=true" width="640" height="1000" frameborder="5" marginheight="0" marginwidth="0">Loading…</iframe>
-                        </div>
+                        <Contactform/>
                     </Card>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

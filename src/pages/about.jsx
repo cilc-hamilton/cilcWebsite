@@ -1,5 +1,4 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
+import { HeaderedPage } from "../components/page";
 import Section from "../components/section";
 import Card from "../components/card";
 import { Profile, Profileholder } from "../components/profile"
@@ -7,8 +6,7 @@ import { Profile, Profileholder } from "../components/profile"
 const About = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="images/headers/ASF07949.jpg" color="gold"/>
+            <HeaderedPage image="/images/headers/about.jpg" color="gold">
                 <Section color="white">
                     <h3>Who we are</h3>
                     <hr className="bg-deepblue"/>
@@ -59,22 +57,14 @@ const About = () => {
                         <li><b>1972</b> - official approval from the Director of the Hamilton Board of education for classes to visit the CILC located in the YWCA</li>
                         <li><b>1970</b> - established in 1970 to celebrate the 25th anniversary of the United Nations</li>
                     </ul>
-                    <br/>
-                    <h3>Viceregal patronage</h3>
-                    <hr className="bg-deepblue"/>
-                    <p>The Lieutenant Governor plays a key role in supporting outstanding contributions to civil society. To this end, the Lieutenant Governor from time to time grants viceregal patronage to organizations and initiatives, lending them vital support and recognition.</p>
-                    <br/>
-                    <p>The late Honourable Lincoln Alexander, PC, CC, OOnt, CD, QC, was the first LGO to bestow the honour to the CILC and subsequent LGO's have continued to honour this tradition.</p>
-                    <br/>
-                    <p>The Honourable Elizabeth Dowdeswell, OC, OOnt, Lieutenant Governor of Ontario is the most recent LGO to grant the CILC viceregal patronage.</p>
                 </Section>
                 <Section color="cilcgrey">
                     <h1 className="font-bold">Our team</h1>
                     <hr className="bg-deepblue"/>
                     <Profileholder>
-                        <Profile image="/images/blankProfile.jpg" name="The late Sheila Davies" desc="Founder"/>
-                        <Profile image="/images/blankProfile.jpg" name="Lana Lowe" desc="Executive Director"/>
-                        <Profile image="/images/blankProfile.jpg" name="Eleanor Chithalen" desc="Consultant"/>
+                        <Profile image="/images/headshots/blankProfile.jpg" name="The late Sheila Davies" desc="Founder"/>
+                        <Profile image="/images/headshots/blankProfile.jpg" name="Lana Lowe" desc="Executive Director"/>
+                        <Profile image="/images/headshots/blankProfile.jpg" name="Eleanor Chithalen" desc="Consultant"/>
                     </Profileholder>
                     <br/>
                     <Card color="cilcgreen">
@@ -85,7 +75,7 @@ const About = () => {
                         <p><b>Governance style</b>: In 2021 the Board of Directors transitioned from a hierarchical board structure to that of a rotating chair model. The rotating chair allows all members of the board to be on an equitable level. Each board member has the opportunity to chair board meetings for up to three months and hold the position formerly held by the president. If there are disagreements on a motion, the board uses a consensus scale to vote on matters and move forward. This model has allowed for greater board member engagement and responsibility through their respective terms. The rotating chair model of governance was officially passed at the 2022 CILC Annual General Meeting.</p>
                         <br/>
                         <div>
-                            <img className="h-96" src="/images/cilcAward.jpg"></img>
+                            <img alt="CILC members receiving a Governance Hall of Fame award from Capacity Canada." className="h-96" src="/images/cilcAward.jpg"></img>
                             <p className="text-center w-0 min-w-full">The CILC receiving a Governance Hall of Fame award from Capacity Canada and the Cowan Foundation.</p>
                         </div>
                     </Card>
@@ -103,8 +93,7 @@ const About = () => {
                         <Profile image="/images/jasonTownsend.jpg" name="Jason Townsend" desc="Honours Bachelor of Commerce (BCom) candidate at the DeGroote School of Business at McMaster University in Hamilton. Jason previously volunteered in the organization's finance team since 2019."/>
                     </Profileholder>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

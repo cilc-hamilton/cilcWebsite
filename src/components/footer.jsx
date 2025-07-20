@@ -8,8 +8,8 @@ function Footer(){
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-row items-center">
                         <Link className="w-fit flex flex-row cursor-pointer items-center" to="/">
-                            <img className="h-24" src="/images/logo.png"></img>
-                            <div className="flex flex-col pl-6">
+                            <img className="h-16 sm:h-24" src="/images/logo.png" alt="CILC Logo"></img>
+                            <div className="hidden sm:flex flex-col pl-6">
                                 <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 text-2xl text-white">Children's</h1>
                                 <h1 style={{fontFamily: 'century'}} className="font-light -mb-0.5 -mt-0.5 text-2xl text-white">International</h1>
                                 <h1 style={{fontFamily: 'century'}} className="font-light -mt-0.5 text-2xl text-white">Learning Centre</h1>
@@ -18,17 +18,17 @@ function Footer(){
                         <div className="grow"/>
                         <Donatebutton/>
                     </div>
-                    <hr className="bg-white"/>
+                    <hr className="hidden sm:block bg-white"/>
                 </div>
-                <nav className="flex flex-row gap-x-4 no-wrap w-full px-4">
+                <nav className="hidden sm:flex flex-row gap-x-4 no-wrap w-full px-4">
                     <Link className="w-1/5" to="/about">
                         <p className="text-white w-full text-center hover:underline">About</p>
                     </Link>
-                    <Link className="w-1/5" to="/resources">
-                        <p className="text-white w-full text-center hover:underline">Resources</p>
-                    </Link>
                     <Link className="w-1/5" to="/programmes">
                         <p className="text-white w-full text-center hover:underline">Programmes</p>
+                    </Link>
+                    <Link className="w-1/5" to="/resources">
+                        <p className="text-white w-full text-center hover:underline">Resources</p>
                     </Link>
                     <Link className="w-1/5" to="/join-us">
                         <p className="text-white w-full text-center hover:underline">Join Us</p>

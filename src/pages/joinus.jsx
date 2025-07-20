@@ -1,14 +1,12 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
 import { Link } from "react-router-dom";
+import { HeaderedPage } from "../components/page";
  
 const Joinus = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="images/headers/ASF07962.jpg" color="cilcblue"/>
+            <HeaderedPage image="images/headers/join.jpg" color="cilcblue">
                 <Section color="white">
                     <Card color="gold">
                         <h1 className="font-bold">We Need You!</h1>
@@ -64,8 +62,7 @@ const Joinus = () => {
                         </Link>
                     </div>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

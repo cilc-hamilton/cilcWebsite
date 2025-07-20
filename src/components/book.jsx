@@ -14,7 +14,7 @@ function Book(props){
                 <h3 className="">{props.title}</h3>
                 <h4 className="font-thin">{props.author}</h4>
                 <hr className="bg-deepblue"/>
-                <img className="w-full" src={imageSource}/>
+                <img className="w-full" src={imageSource} alt={`Book cover of ${props.title} by ${props.author}.`}/>
                 <br/>
                 <p className={"text-[1rem]"+margin}>{props.series}</p>
                 <p className="text-[1.1rem]">{props.summary}</p>

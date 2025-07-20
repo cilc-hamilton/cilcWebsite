@@ -1,13 +1,11 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import { HeaderedPage } from "../components/page";
 
 const Org = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="gold"/>
+            <HeaderedPage image="/images/headers/organization.jpg" color="gold">
                 <Section color="white">
                     <h3>Who we are</h3>
                     <hr className="bg-deepblue"/>
@@ -67,8 +65,7 @@ const Org = () => {
                     <br/>
                     <p>The Honourable Elizabeth Dowdeswell, OC, OOnt, Lieutenant Governor of Ontario is the most recent LGO to grant the CILC viceregal patronage.</p>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

@@ -20,7 +20,7 @@ function Card(props){
     }
     return (
         <>
-            <div style={{backgroundColor: colour}} className="bg-cilcgreen flex flex-col items-center justify-center p-16 w-full">
+            <div style={{backgroundColor: colour}} className="bg-cilcgreen flex flex-col items-center justify-center p-8 sm:p-16 w-full">
                 {props.children}
             </div>
         </>

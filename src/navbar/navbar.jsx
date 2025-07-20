@@ -48,7 +48,7 @@ function Navbar() {
             <div className="h-36 z-30 hidden flex-row bg-white w-screen px-12 fixed top-0 left-0 box-border shadow-[0_10px_10px_0_rgba(0,0,0,0.2)] items-stretch min-[900px]:flex">
                 <Link className="flex items-center justify-center" to="/">
                     <div className="flex flex-row cursor-pointer items-center justify-center">
-                        <img className="h-24" src="/images/logo.png"></img>
+                        <img alt="CILC Logo" className="h-24" src="/images/logo.png"></img>
                         <div className="flex flex-col pl-6">
                             <h1 style={{fontFamily: 'century'}} className="font-light text-[#287CC0] -mb-0.5 text-2xl">Children's</h1>
                             <h1 style={{fontFamily: 'century'}} className="font-light text-[#287CC0] -mb-0.5 -mt-0.5 text-2xl">International</h1>
@@ -69,11 +69,11 @@ function Navbar() {
                             About
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
+                        <Navlinks toward="/programmes" color="cilcgreen">Programmes</Navlinks>
                         <Navlinks dropdown = "Book Nook,Past Newsletters,Videos" toward="/resources" color="cilcpurple">
                             Resources
                             <GoChevronDown className="ml-2"/>
                         </Navlinks>
-                        <Navlinks toward="/programmes" color="cilcgreen">Programmes</Navlinks>
                         <Navlinks dropdown = "Volunteer,Become a Member,Supporters" toward="/join-us" color="cilcblue">
                             Join Us
                             <GoChevronDown className="ml-2"/>

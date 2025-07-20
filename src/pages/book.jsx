@@ -1,14 +1,12 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
 import Book from "../components/book";
+import { HeaderlessPage } from "../components/page";
  
 const Books=() => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcpurple"/>
+            <HeaderlessPage>
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h3 className="text-white">Our top book recommendations for students, by recommended age:</h3>
@@ -371,8 +369,7 @@ const Books=() => {
                         />
                     </div>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderlessPage>
         </>
     );
 };

@@ -61,25 +61,25 @@ function Mobilenav() {
                     <div className="w-full flex grow shrink basis-0 h-full items-center justify-center">
                         <Navlinks toward="/about" pos="mobile">
                             <FaHandsHoldingChild/>
-                            About
+                            <p className="hidden sm:inline">About</p>
                         </Navlinks>
                     </div>
                     <div className="w-full flex grow shrink basis-0 h-full items-center justify-center">
                         <Navlinks toward="/contact" pos="mobile">
                             <GrContact/>
-                            Contact
+                            <p className="hidden sm:inline">Contact</p>
                         </Navlinks>
                     </div>
                 </div>
                 <div className="z-1 absolute bg-white rounded-full aspect-square h-full p-1 box-content bottom-0"></div>
                 <Link className="z-2" to="/">
-                    <img className="h-14 px-5 pb-2 box-content brightness-100 hover:brightness-110" src="/images/logo.png"></img>
+                    <img alt="CILC Logo" className="h-14 px-5 pb-2 box-content brightness-100 hover:brightness-110" src="/images/logo.png"></img>
                 </Link>
                 <div className="flex grow shrink basis-0 items-end">
                     <div className="w-full flex grow shrink basis-0 h-full items-center justify-center">
                         <Navlinks toward="/donate" pos="mobile">
                             <BiSolidDonateHeart/>
-                            Donate
+                            <p className="hidden sm:inline">Donate</p>
                         </Navlinks>
                     </div>
                     <div className="w-full flex grow shrink basis-0 h-full items-center justify-center" onClick={()=>{
@@ -87,7 +87,7 @@ function Mobilenav() {
                     }}>
                         <Navlinks pos="mobile" toward="more">
                             <FaBars/>
-                            More
+                            <p className="hidden sm:inline">More</p>
                         </Navlinks>
                     </div>
                 </div>

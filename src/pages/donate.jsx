@@ -1,13 +1,11 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import { HeaderedPage } from "../components/page";
  
 const Donate = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcred"/>
+            <HeaderedPage image="/images/headers/donate.jpg" color="cilcred">
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h1 className="font-bold text-white">Make a donation!</h1>
@@ -26,8 +24,7 @@ const Donate = () => {
                         </div>
                     </Card>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

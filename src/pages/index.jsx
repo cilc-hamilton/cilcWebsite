@@ -1,15 +1,12 @@
-import React from "react";
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
 import Faq from "../components/faq";
+import { HeaderedPage } from "../components/page";
  
 const Home = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="white"/>
+            <HeaderedPage  image="/images/headers/home.jpg" color="white">
                 <Section color="white">
                     <Card color = "cilcgreen">
                         <h3>Land Acknowledgement</h3>
@@ -27,8 +24,7 @@ const Home = () => {
                 <Section color="white">
                     <Faq/>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

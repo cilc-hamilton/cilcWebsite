@@ -1,13 +1,11 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import { HeaderedPage } from "../components/page";
  
 const Member = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcblue"/>
+            <HeaderedPage image="/images/headers/member.jpg" color="cilcblue">
                 <Section color="white">
                     <Card color="cilcpurple">
                         <h3 className="text-white">Contribute to our mission</h3>
@@ -20,8 +18,7 @@ const Member = () => {
                     <hr className="bg-deepblue"/>
                     <p>Consider a membership gift for yourself, a friend, or loved one.  A membership is only $25.00 (or $10.00 minimum, for those who require a charitable tax receipt) and includes a quarterly newsletter, special access to CILC events, and some other very special exclusive perks.</p>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };

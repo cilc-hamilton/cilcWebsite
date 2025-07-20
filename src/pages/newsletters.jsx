@@ -1,13 +1,11 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import { Link } from "react-router-dom";
+import { HeaderlessPage } from "../components/page";
  
 const Newsletters=() => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcpurple"/>
+            <HeaderlessPage>
                 <Section color="white">
                     <h3>Check out some of our past newsletters below!</h3>
                     <hr className="bg-deepblue"/>
@@ -37,8 +35,7 @@ const Newsletters=() => {
                         </Link>
                     </div>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderlessPage>
         </>
     );
 };

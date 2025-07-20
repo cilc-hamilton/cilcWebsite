@@ -1,15 +1,13 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
 import Contactform from "../components/contactform";
 import { Link } from "react-router-dom";
+import { HeaderlessPage } from "../components/page";
  
 const Contact = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcdarkblue" component="Contactform" formHeight="full"/>
+            <HeaderlessPage>
                 <Section color="white">
                     <Card>
                         <h3>Get in touch and we'll get back to you as soon as we can.  We look forward to hearing from you!</h3>
@@ -24,8 +22,7 @@ const Contact = () => {
                 <Section color="cilcgrey">
                     <Contactform/>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderlessPage>
         </>
     );
 };

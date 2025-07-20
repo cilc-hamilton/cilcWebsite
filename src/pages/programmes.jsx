@@ -1,13 +1,11 @@
-import Header from "../components/header"
-import Footer from "../components/footer";
 import Section from "../components/section";
 import Card from "../components/card";
+import { HeaderedPage } from "../components/page";
  
 const Programmes = () => {
     return (
         <>
-            <div className="flex flex-col w-screen absolute top-0 min-[900px]:top-36">
-                <Header image="" color="cilcgreen"/>
+            <HeaderedPage image="/images/headers/programmes.jpg" color="cilcgreen">
                 <Section color="white">
                     <Card color="cilcgreen">
                         <h3>Festivals of Light</h3>
@@ -40,8 +38,7 @@ const Programmes = () => {
                     <h3>Previous Programmes</h3>
                     <hr className="bg-deepblue"/>
                 </Section>
-                <Footer/>
-            </div>
+            </HeaderedPage>
         </>
     );
 };
