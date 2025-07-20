@@ -56,14 +56,6 @@ const Org = () => {
                         <li><b>1972</b> - official approval from the Director of the Hamilton Board of education for classes to visit the CILC located in the YWCA</li>
                         <li><b>1970</b> - established in 1970 to celebrate the 25th anniversary of the United Nations</li>
                     </ul>
-                    <br/>
-                    <h3>Viceregal patronage</h3>
-                    <hr className="bg-deepblue"/>
-                    <p>The Lieutenant Governor plays a key role in supporting outstanding contributions to civil society. To this end, the Lieutenant Governor from time to time grants viceregal patronage to organizations and initiatives, lending them vital support and recognition.</p>
-                    <br/>
-                    <p>The late Honourable Lincoln Alexander, PC, CC, OOnt, CD, QC, was the first LGO to bestow the honour to the CILC and subsequent LGO's have continued to honour this tradition.</p>
-                    <br/>
-                    <p>The Honourable Elizabeth Dowdeswell, OC, OOnt, Lieutenant Governor of Ontario is the most recent LGO to grant the CILC viceregal patronage.</p>
                 </Section>
             </HeaderedPage>
         </>
