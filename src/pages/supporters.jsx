@@ -1,6 +1,7 @@
 import Section from "../components/section";
 import Card from "../components/card";
 import { HeaderlessPage } from "../components/page";
+import Sponsor from "../components/sponsor";
  
 const Support = () => {
     return (
@@ -8,19 +9,17 @@ const Support = () => {
             <HeaderlessPage>
                 <Section color="white">
                     <Card color="gold">
-                        <h3 className="font-bold">The CILC would like to thank the following for their generous support:</h3>
+                        <h3 className="font-bold">The CILC would like to thank the following partners and sponsors for their generous support:</h3>
                         <hr className="bg-deepblue"/>
-                        <ul className="list-inside w-full">
-                            <li>City of Hamilton</li>
-                            <li>Hamilton Community Foundation</li>
-                            <li>Patrick J McNally Charitable Foundation</li>
-                        </ul>
-                    </Card>
-                    <br/>
-                    <Card color="cilcgreen">
-                        <h3 className="font-bold">Partners</h3>
-                        <hr className="bg-deepblue"/>
-                        <p>The CILC is proud to partner with the Hamilton Youth Steel Orchestra (HYSO)</p>
+                        <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
+                            <Sponsor org="Government of Canada" image="/images/sponsors/canada.png"></Sponsor>
+                            <Sponsor org="CMIM" image="/images/sponsors/cmim.png"></Sponsor>
+                            <Sponsor org="City of Hamilton" image="/images/sponsors/hamilton.png"></Sponsor>
+                            <Sponsor org="Hamilton Community Foundation" image="/images/sponsors/hcf.png"></Sponsor>
+                            <Sponsor org="Hamilton Youth Steel Orchestra" image="/images/sponsors/hyso.png"></Sponsor>
+                            <Sponsor org="Patrick J McNally Foundation"></Sponsor>
+                            <Sponsor org="The Guenther Foundation"></Sponsor>
+                        </div>
                     </Card>
                 </Section>
                 <Section color="cilcgrey">
